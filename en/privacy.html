@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy — NullFace</title>
+<meta name="description" content="The NullFace privacy policy. All photo analysis happens on the device; neither your photos nor the results are ever sent anywhere.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../assets/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" hreflang="ja" href="../privacy.html">
+<link rel="alternate" hreflang="en" href="./privacy.html">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="../assets/icon.png" alt="" width="26" height="26" style="border-radius:7px">
+      NullFace
+    </a>
+    <nav>
+      <a href="index.html">Overview</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="../privacy.html" lang="ja">日本語</a>
+    </nav>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="wrap" style="max-width:760px">
+
+    <h1 style="font-size:clamp(26px,5vw,36px);line-height:1.35;letter-spacing:-0.02em;margin:0 0 10px">Privacy Policy</h1>
+    <p class="meta">App: NullFace (iOS) / Bundle ID: com.hide.www.privatephotos</p>
+    <p class="meta">Effective: 18 September 2026 / Last updated: 19 September 2026</p>
+
+    <div class="summary">
+      <p>Summary</p>
+      <p>NullFace collects no personal information whatsoever. All photo analysis happens inside your iPhone, and no photo, video or analysis result is ever sent off the device. The app makes no network requests and contains no advertising, analytics or tracking.</p>
+    </div>
+
+    <h2>1. Information we do not collect</h2>
+    <p>The app never sends or collects any of the following, either for the developer or for any third party.</p>
+    <ul>
+      <li>Your photos and videos, or thumbnails of them</li>
+      <li>Analysis results (detected faces or people, their size, sharpness scores and so on)</li>
+      <li>Contact details such as your name, email address or phone number</li>
+      <li>Location, contacts, calendar, microphone or camera data</li>
+      <li>Advertising identifiers (IDFA), device identifiers, usage statistics or behavioural history</li>
+    </ul>
+    <p>There is no account to create, and the app does not identify you in any way.</p>
+
+    <h2>2. Information stored on your device only</h2>
+    <p>So that it can decide quickly whether to show a photo, the app keeps an index of its analysis results on the device. Only the following is stored.</p>
+    <dl>
+      <dt>Photo identifier and modification date</dt>
+      <dd>The identifier iOS assigns to each item in your photo library and the date it was last modified, used to notice edits and analyze the photo again.</dd>
+      <dt>Size of detected faces and people</dt>
+      <dd>The longer side of each detected rectangle, converted to pixels of the original image.</dd>
+      <dt>Size of detected body parts</dt>
+      <dd>Where a chest, belly or buttocks appears, the longer side of that rectangle (also in pixels), used to hide photos that show no face.</dd>
+      <dt>Sharpness score</dt>
+      <dd>A number derived from how much edge detail the image has, used to hide blurry photos on the safe side.</dd>
+      <dt>Facts about the kind of photo</dt>
+      <dd>Whether it is a screenshot, whether it was taken on this iPhone, and similar results.</dd>
+    </dl>
+    <p>
+      All of these are numbers and true/false values. They contain no image data and nothing from which an image could be reconstructed.
+      They live in the app’s own container (the Application Support directory) and are encrypted by the iOS file protection system.
+      No other app can read them, and this app never sends them anywhere.
+    </p>
+    <p>
+      Your settings (limits, which rules are on, the column count and so on) are stored on the device in the same way.
+      <b>Everything stored is deleted the moment you delete the app.</b>
+    </p>
+
+    <h2>2-2. The on-device machine learning model</h2>
+    <p>
+      Faces and people are detected with the Vision framework built into iOS.
+      In addition, photos without a visible face are judged with a machine learning model bundled inside the app (NudeNet, converted to Core ML).
+    </p>
+    <p>
+      <b>All of this runs entirely on your device.</b>
+      The model ships inside the app; no photo and no result is sent anywhere in order to run it.
+      Using it involves no request to any external service and no usage reporting.
+      You can turn this check off at any time in Settings.
+    </p>
+
+    <h2>3. Access to your photo library</h2>
+    <p>
+      The app accesses your photo library for one purpose only: to list your photos and automatically hide those where a person appears up close.
+      Permission is requested through the standard iOS dialog and can be changed or revoked at any time in the Settings app.
+    </p>
+    <p>
+      Face and person detection runs <b>on the device</b> using the Vision framework built into iOS.
+      No external image recognition service or cloud is involved.
+      The app is view-only: sharing and deleting are disabled by default (you can change that in Settings).
+    </p>
+    <p>
+      The app writes to your photo library <b>only when you ask it to</b>.
+      There are two such actions — hiding a photo (moving it to Apple’s Hidden album) and toggling a favourite — and both are confirmed first.
+      The app never changes, moves or deletes a photo on its own.
+    </p>
+
+    <h2>4. Face ID and passcode</h2>
+    <p>
+      So that only you can open the settings screen, the app asks iOS to verify you with Face ID, Touch ID or your passcode.
+      iOS performs the check, and <b>the app receives only whether it succeeded</b>.
+      No face or fingerprint data is handed to the app, stored or transmitted.
+    </p>
+
+    <h2>5. Network use</h2>
+    <p>
+      The app communicates with no server of any kind.
+      It contains no advertising, analytics or crash reporting, and no third-party SDKs.
+      Every feature works exactly the same way offline.
+    </p>
+    <p>
+      If you use iCloud Photos, the syncing of the photos themselves is performed by Apple’s iCloud. That is a standard iOS feature
+      that this app takes no part in, and Apple’s privacy policy applies to it.
+    </p>
+
+    <h2>6. Sharing with third parties</h2>
+    <p>
+      As described above the app collects nothing, so there is nothing to share with anyone.
+      Even in response to a lawful request, the developer holds no user information that could be disclosed.
+    </p>
+    <p>
+      In connection with distribution on the App Store, Apple may aggregate statistics such as download counts and crash reports.
+      That is Apple’s own mechanism and contains nothing that identifies an individual user.
+      Please see Apple’s privacy policy for details.
+    </p>
+
+    <h2>7. Children’s information</h2>
+    <p>
+      The app collects no personal information from any user, of any age.
+      It never knowingly collects information from children under 13.
+    </p>
+
+    <h2>8. Changes to this policy</h2>
+    <p>
+      If this policy changes, this page is updated and the “Last updated” date at the top is revised.
+      Any significant change to what information is involved will be announced with an app update.
+    </p>
+
+    <h2>9. Contact</h2>
+    <p>
+      For questions about this policy or about privacy in this app, please get in touch.
+    </p>
+    <p>
+      The developer of NullFace<br>
+      <a href="mailto:hideto0926@gmail.com">hideto0926@gmail.com</a>
+    </p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="index.html">Overview</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="../privacy.html" lang="ja">日本語</a>
+    </div>
+    <p>NullFace — a view-only photo app. iOS 18.0 or later.</p>
+  </div>
+</footer>
+
+</body>
+</html>
